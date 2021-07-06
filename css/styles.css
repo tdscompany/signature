@@ -1,5 +1,6 @@
 :root {
   --color-primary: #d60061;
+  --color-primary-hover: #f360a2;
   --color-text: #2c3e50;
   --color-bg: #eee;
 }
@@ -85,4 +86,28 @@ body {
 
 .btn-copy svg {
   margin-bottom: 30px;
+}
+
+.footer a {
+  transition: all 1s;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  margin: 1rem auto 0;
+  padding: 1rem;
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: var(--color-primary);
+  border-radius: 0.5rem;
+}
+.footer a.show {
+  opacity: 1;
+  visibility: visible;
+  margin-top: 0rem;
+}
+.footer a:hover {
+  transition: all 0.3s;
+  background-color: var(--color-primary-hover);
 }
