@@ -47,7 +47,7 @@ body {
 }
 
 .box__container {
-  padding: 10px;
+  padding: 15px;
   box-shadow: 4px 4px 7px -5px #ccc;
   background-color: #fff;
 }
@@ -73,6 +73,9 @@ body {
   border: 1px solid #ccc;
   border-radius: 0.4rem;
 }
+.form-info input:last-of-type {
+  margin-bottom: 0;
+}
 
 .btn-copy {
   display: flex;
@@ -80,7 +83,8 @@ body {
   justify-content: center;
   align-items: center;
   width: 150px;
-  height: 200px;
+  height: 150px;
+  font-size: 1rem;
   cursor: pointer;
 }
 
