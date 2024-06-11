@@ -37,7 +37,7 @@ $(document).ready(function(){
         }
 
       } else {
-        if(input === ".js-phone1"){
+        if(input === ".js-phone2"){
           $(input).text(" | " + e.target.value);
         } else {
           $(input).text(e.target.value);
