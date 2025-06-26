@@ -14,7 +14,6 @@ $(document).ready(function(){
   $('.js-copy').click(function(){
     var text =  $(this).find('.text');
     text.text('Copiado!');
-    $('.js-alert').addClass('show');
     setTimeout(function(){
       text.text('Copiar');
     },8000);
