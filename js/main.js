@@ -31,13 +31,9 @@ $(document).ready(function(){
           $(input).attr('href', 'mailto:' + $(input).data('placeholder'));
         }
 
-        if(input === ".js-phone1" || input === ".js-phone2"){
-          $(input).css('display', 'none');
-        }
-
       } else {
         if(input === ".js-phone1"){
-          $(input).text(" | " + e.target.value);
+          $(input).text(e.target.value);
         } else {
           $(input).text(e.target.value);
         }
