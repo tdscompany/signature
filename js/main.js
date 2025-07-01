@@ -46,8 +46,13 @@ $(document).ready(function(){
           $(input).attr('href', 'tel:' + e.target.value.replace(/\D/g,''));
         }
       }
-
     });
   });
-
+  $('input[name="phone1"]').on('input', function () {
+      if ($(this).val().trim()) {
+        $('.br-phone1').show();
+      } else {
+        $('.br-phone1').hide();
+      }
+    });
 });
